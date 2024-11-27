@@ -1,15 +1,15 @@
 [profile.default]
-src = "src"                     # Same source directory as Hardhat
-test = "test/foundry"          # Separate directory for Foundry tests to avoid conflicts
+src = "src"                    # Same source directory as Hardhat
+test = "test"                  # Separate directory for Foundry tests to avoid conflicts
 out = "artifacts/foundry"      # Output directory for Foundry artifacts
-libs = ["node_modules"]        # Add node_modules to find npm dependencies
+libs = ["node_modules", "lib"] # Where to look for libs
 cache_path = "cache/foundry"   # Separate cache directory
 fs_permissions = [{ access = "read", path = "./"}] # Needed for loading env vars
 
 # Fallback on hardhat.config
-#solc = "0.8.28"               # Match your Hardhat solidity version
-#optimizer = true
-#optimizer_runs = 200
+solc = "0.8.28"               # Match your Hardhat solidity version
+optimizer = true
+optimizer_runs = 200
 
 [fmt]
 line_length = 120
