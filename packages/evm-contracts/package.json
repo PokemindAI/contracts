@@ -1,6 +1,5 @@
 {
   "name": "evm-contracts",
-  "module": "index.ts",
   "type": "module",
   "scripts": {
     "test": "hardhat test",
@@ -20,6 +19,7 @@
     "chai": "^5.1.2",
     "ethers": "^6.13.4",
     "hardhat": "^2.22.16",
+    "hardhat-deploy": "^0.14.0",
     "hardhat-gas-reporter": "^2.2.2",
     "solidity-coverage": "^0.8.14",
     "ts-node": "^10.9.2",
