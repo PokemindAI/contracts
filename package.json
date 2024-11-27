@@ -1,0 +1,7 @@
+{
+  "name": "@pokemind/contracts",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
